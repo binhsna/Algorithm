@@ -1,0 +1,16 @@
+D:\Projects\Algorithm\Sort\bin\Debug\net5.0\Sort.exe
+D:\Projects\Algorithm\Sort\bin\Debug\net5.0\Sort.deps.json
+D:\Projects\Algorithm\Sort\bin\Debug\net5.0\Sort.runtimeconfig.json
+D:\Projects\Algorithm\Sort\bin\Debug\net5.0\Sort.runtimeconfig.dev.json
+D:\Projects\Algorithm\Sort\bin\Debug\net5.0\Sort.dll
+D:\Projects\Algorithm\Sort\bin\Debug\net5.0\ref\Sort.dll
+D:\Projects\Algorithm\Sort\bin\Debug\net5.0\Sort.pdb
+D:\Projects\Algorithm\Sort\obj\Debug\net5.0\Sort.csproj.AssemblyReference.cache
+D:\Projects\Algorithm\Sort\obj\Debug\net5.0\Sort.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\Algorithm\Sort\obj\Debug\net5.0\Sort.AssemblyInfoInputs.cache
+D:\Projects\Algorithm\Sort\obj\Debug\net5.0\Sort.AssemblyInfo.cs
+D:\Projects\Algorithm\Sort\obj\Debug\net5.0\Sort.csproj.CoreCompileInputs.cache
+D:\Projects\Algorithm\Sort\obj\Debug\net5.0\Sort.dll
+D:\Projects\Algorithm\Sort\obj\Debug\net5.0\ref\Sort.dll
+D:\Projects\Algorithm\Sort\obj\Debug\net5.0\Sort.pdb
+D:\Projects\Algorithm\Sort\obj\Debug\net5.0\Sort.genruntimeconfig.cache
