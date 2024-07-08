@@ -1,0 +1,120 @@
+/**** Tạo hàng đợi Queue bằng danh sách liên kết đơn ****/
+#include<iostream>
+using namespace std;
+/* tạo cấu trúc của Node trong danh sách liên kết */
+struct Node{
+    Node *next;
+    int data;
+};
+/* tạo cấu trúc của hàng đợi Queue */
+struct Queue{
+    Node *head, *tail;
+};
+/* khởi tạo rỗng cho Node trong danh sách liên kết */
+void Init( Queue &q ){
+    q.head = q.tail = NULL;
+}
+/* hàm tạo một Node mới */
+Node *createNode( int x ){
+    Node *p = new Node;
+    if(!p) exit(1);
+    p->next = NULL;
+    p->data = x;
+    return p;
+}
+/* hàm thêm phần tử vào đầu trong hàng đợi Queue */
+void Push(Queue &q, Node *p ){
+  //kiểm tra nếu hàng đợi rỗng thì phần tử thêm vào chính là pHead và pTail
+    if(!q.head) q.head = q.tail = p;
+  //Nếu trong danh sách đã tồn tại phần tử thì cho pNext của pTail trỏ tới node p
+  //khi đó node p chính là pTail
+    else{
+        q.tail->next = p;
+        q.tail = p;
+    }
+}
+/* hàm lấy phần tử đầu trong hàng đợi, nhưng không xóa nó */
+int Top(Queue q ){
+  //kiểm tra nếu hàng đợi tồn tại phần tử thì ta thực hiện return phần tử đầu tiên
+    if(q.head){
+        return q.head->data;
+    }
+  //Nếu trong hàng đợi rỗng thì return 0 và kết thúc hàm
+    else return 0;
+}
+/* hàm xóa phần tử đầu trong hàng đợi */
+int Pop(Queue &q ){
+  //kiểm tra nếu hàng đợi tồn tại thì thực hiện các câu lệnh
+    if(q.head){
+    //tạo mới một Node p (là node thay thế cho node cần xóa)
+        Node *p = q.head;
+    //trỏ con trỏ Next đến phần tử tiếp theo để có thể xóa phần tử đầu
+        q.head = q.head->next;
+    //gán data cho p và return nó
+        return p->data;
+    //sau khi return thì thực hiện xóa nó khỏi hàng đợi
+        delete p;
+    }
+    return 0;// tuong duong queue rong
+}
+/* hàm nhập các phần tử vào hàng đợi */
+void nhap(Queue &q ){
+    int n, x;
+  cout<<"Nhập số phần tử bạn muốn thêm vào trong Queue: ";
+    cin>> n;
+    while(n--){
+        cout<<"\nNhập phần tử trong hàng đợi: "; cin>> x;
+        Node *p = createNode(x);
+        Push(q,p);
+    }
+}
+/* hàm xuất các phần tử trong hàng đợi */
+void xuat(Queue q ){
+    Node *p = q.head;
+    while(p){
+        cout<<p->data << "\t";
+        p = p->next;
+    }
+    cout<< endl;
+}
+/* hàm menu để hiển thị menu và gọi các hàm đã tạo */
+void menu(Queue q){
+  int lc;
+  do{
+        cout << "\n\n\t\t ============== Menu ==============";
+        cout << "\n\t1. Nhập phần tử cho hàng đợi";
+        cout << "\n\t2. Xuất phần tử trong hàng đợi";
+        cout << "\n\t3. Hiển thị phần tử đầu tiên của hàng đợi";
+        cout << "\n\t4. Xóa phần tử đầu tiên của hàng đợi";
+        cout << "\n\t0. Thoát";
+        cout << "\n\n\t\t ============== End ==============";
+    cout<<"\nNhập lựa chọn bạn muốn chọn: ";
+        cin>> lc;
+        switch(lc){
+            case 0: break;
+            case 1: 
+              nhap(q);
+              break;
+            case 2:
+              cout<<"Các phần tử trong hàng đợi Queue là: ";
+              xuat(q);
+              break;
+            case 3:
+              cout<<"Phần tử đầu tiên của hàng đợi là: "<<Top(q);
+              break;
+            case 4:
+              Pop(q);
+              cout<<"Xóa thành công, vui lòng nhập 2 để kiểm tra lại!!";
+              break;
+            default: cout<<"\nNhập sai, vui lòng nhập lại!";
+        }
+    } while(lc);
+}
+/* hàm main để hiển thị menu*/
+int main(){
+    Queue q;
+    Init(q);
+  int lc;
+  menu(q);
+  cout<<"\n---------------------------------\n";
+}

@@ -1,0 +1,104 @@
+#include<iostream>
+using namespace std;
+//khai báo cấu trúc Node
+struct Node {
+    int data;
+    Node *next;
+};
+typedef struct Node *stack;
+//khai báo cấu trúc stack
+struct Stack{
+    Node *head;
+    Node *tail;
+};
+ 
+//kiểm tra stack rỗng
+bool isEmpty(stack s) {
+    return (s == NULL);
+}
+ 
+//tạo Node
+Node *createNode(int data) {
+    Node *p = new Node();
+    if (p == NULL) {
+        return NULL;
+    }
+    p->data = data;
+    p->next = NULL;
+ 
+    return p;
+}
+ 
+void push(stack &s, int data) {
+  // tạo một Node mới
+    Node *ptr = createNode(data);
+  // kiểm tra stack rỗng
+    if (isEmpty(s)) {
+        s = ptr;
+    }
+  //nếu tồn tại phần tử ta trỏ đến phần tử đầu danh sách
+    else {
+        ptr->next = s;
+        s = ptr;
+    }
+}
+ 
+int top(stack s) {
+    if (!isEmpty(s)) {
+        return s->data;
+    }
+    else {
+        cout << "Stack is empty!" << endl;
+    }
+}
+ 
+ 
+int pop(stack &s) {
+    if (!isEmpty(s)) {
+    //tạo một biến data
+        int data = s->data;
+    //tạo Node x và gán cho bằng s
+        Node *x = s;
+    // cho s = s trỏ đến next
+        s = s->next;
+    // thực hiện xóa node x
+        delete(x);
+    cout<<"Xóa thành công !!";
+        return data;
+    }
+    else {
+        cout << "Stack rỗng!" << endl;
+    }
+}
+ 
+int main() {
+  int lc, k;
+    stack s;
+  push(s, 10);
+  push(s, 11);
+  push(s, 12);
+  push(s, 13);
+  push(s, 14);
+  push(s, 15);
+  push(s, 16);
+  cout<<"danh sách các số bao gồm : 10, 11, 12, 13, 14, 15, 16";
+do{
+        cout << "\n\n\t\t ============== Menu ==============";
+        cout << "\n\t1. Hiển thị phần tử đầu Stack";
+        cout << "\n\t2. Xóa phần tử đầu Stack";
+        cout << "\n\t0. Ket thuc";
+        cout << "\n\n\t\t ============== End ==============";
+    cout<<"\nNhập lựa chọn bạn muốn chọn: ";
+        cin>> lc;
+        switch(lc){
+            case 0: break;
+            case 1: 
+      cout<<"Phần tử đầu tiên trong Stack: "<<top(s);
+      break;
+            case 2:
+      pop(s);
+      break;
+            default: cout<<"\nNhập sai, vui lòng nhập lại!";
+        }
+    } while(lc);
+}

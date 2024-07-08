@@ -1,0 +1,51 @@
+Bài 1: Nhập vào 1 chuỗi kí tự in thường từ bàn phím. Bỏ hết tất cả các kí tự x(x là 1 kí tự in thường nhập từ bàn phím) đó vào chuỗi temp
+Chú ý: Không được dùng hàm có sẵn.
+
+s = "ki thuat lap trinh"
+x: 'h'
+
+==> temp = "hh"
+
+
+
+================= CODE
+#include<stdio.h>
+#include<conio.h>
+#include<string.h>
+
+// hàm xử lí
+void Tim_Kiem(char str[], char temp[], char x)
+{
+	int dem = 0; // chỉ số của chuỗi temp
+	// duyệt từ đầu chuỗi str đến cuối chuỗi str - nếu kí tự x mà trùng với kí tự nào của chuỗi str thì bỏ kí tự của chuỗi str vào chuỗi temp
+	for(int i = 0; i < strlen(str); i++)
+	{
+		
+		if(str[i] == x)
+		{
+			temp[dem] = str[i];
+			dem++; // biến dem sẽ tăng lên 1 đơn vị
+		}
+	}
+	temp[dem] = '\0'; // phải có kí tự kết thúc chuỗi - nếu không sẽ bị lỗi
+
+}
+
+int main()
+{
+	char str[30]; // khai báo chuỗi str chứa tối đa 29 kí tự
+	fflush(stdin);
+	printf("\nNhap chuoi: ");
+	gets(str); // nhập chuỗi từ bàn phím
+	printf("\nChuoi str nhan duoc la: %s", str);
+
+	char x;
+	printf("\nNhap ki tu x: ");
+	scanf("%c", &x); // nhập kí tự từ bàn phím
+
+	char temp[30]; // khai báo chuỗi temp chứa tối đa 29 kí tự
+	Tim_Kiem(str, temp, x);	
+	printf("\nChuoi temp nhan duoc la: %s", temp);
+	getch(); // dừng màn hình
+	return 0;
+}

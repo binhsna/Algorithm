@@ -1,0 +1,64 @@
+s="12345" ==> độ dài : 5
+s[0] = '1';
+s[1] = '2';
+s[2] = '3';
+s[3] = '4';
+s[4] = '5';
+
+strrev(s): s = "54321"
+s[0] = '5';
+s[1] = '4';
+s[2] = '3';
+s[3] = '2';
+s[4] = '1';
+
+s[0] = '1' sau khi đảo s[4] = '1'
+s[1] = '2' sau khi đảo s[3] = '2'
+s[2] = '3' sau khi đảo s[2] = '3'
+s[3] = '4' sau khi đảo s[1] = '4'
+s[4] = '5' sau khi đảo s[0] = '5'
+
+==> độ dài : 5
+
+Quy tắc: hoán vị 2 kí tự cho nhau:  s[i] hoán vị s[độ dài - i - 1] 
+Hoán vị cặp kí tự trong đoạn : 0 đến (độ dài / 2) - 1
+"54321" ==> độ dài: 5 ===> 0 --> (độ dài / 2) - 1: 1
+
+=============== SOURCE CODE
+
+#include<stdio.h>
+#include<conio.h>
+#include<string.h>
+
+void Hoan_Vi(char &x, char &y)
+{
+	char temp = x;
+	x = y;
+	y = temp;
+}
+
+// xây dựng lại hàm đảo ngược chuỗi: strrev
+void STRREV(char s[])
+{
+	int dodai = strlen(s);
+	for(int i = 0; i < (dodai / 2); i++)
+	{
+		// đổi chỗ cặp kí tự cho nhau theo công thức: s[i] hoán vị s[dodai - i - 1]
+		Hoan_Vi(s[i], s[dodai - i - 1]);
+	}
+}
+
+int main()
+{
+	char s[100];
+
+	printf("\nNhap chuoi: ");
+	gets(s);
+	printf("\nChuoi nhan duoc: %s", s);
+	STRREV(s);
+	printf("\nChuoi sau khi dao nguoc: %s", s);
+
+
+	getch();
+	return 0;
+}
