@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "UF+lMlLyjCb+XreCNeQWa/bKzdEVpt5sJzvweHX21L9g/QmO5MMBWq2sG4Hi6DB2JjU8OjzuAI5TmEmjkwcTXQ==",
+  "dgSpecHash": "t/YkALO2B1CxPfQgV1xekeHuC6YM1LgX1Y94tdTUm/Nvl8ZlXXz3nAZFOiXYxo1bbJrIRZu5xnI0Tgg0wa+ogA==",
   "success": true,
-  "projectFilePath": "D:\\Projects\\Algorithm\\Sort\\Sort.csproj",
+  "projectFilePath": "D:\\Projects\\Algorithm\\C#\\Sort\\Sort.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

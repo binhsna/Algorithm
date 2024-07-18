@@ -1,13 +1,13 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Projects\\Algorithm\\Sort\\",
+  "WorkspaceRootPath": "D:\\Projects\\Algorithm\\C#\\Sort\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9E77F071-24D0-424C-AAE2-5455BADF53E7}|Sort.csproj|d:\\projects\\algorithm\\sort\\m_sort.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{9E77F071-24D0-424C-AAE2-5455BADF53E7}|Sort.csproj|d:\\projects\\algorithm\\c#\\sort\\m_sort.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9E77F071-24D0-424C-AAE2-5455BADF53E7}|Sort.csproj|solutionrelative:m_sort.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9E77F071-24D0-424C-AAE2-5455BADF53E7}|Sort.csproj|d:\\projects\\algorithm\\sort\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{9E77F071-24D0-424C-AAE2-5455BADF53E7}|Sort.csproj|d:\\projects\\algorithm\\c#\\sort\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9E77F071-24D0-424C-AAE2-5455BADF53E7}|Sort.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -24,11 +24,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "m_sort.cs",
-              "DocumentMoniker": "D:\\Projects\\Algorithm\\Sort\\m_sort.cs",
+              "DocumentMoniker": "D:\\Projects\\Algorithm\\C#\\Sort\\m_sort.cs",
               "RelativeDocumentMoniker": "m_sort.cs",
-              "ToolTip": "D:\\Projects\\Algorithm\\Sort\\m_sort.cs",
+              "ToolTip": "D:\\Projects\\Algorithm\\C#\\Sort\\m_sort.cs",
               "RelativeToolTip": "m_sort.cs",
-              "ViewState": "AQIAAFcAAAAAAAAAAAAowMMAAAABAAAA",
+              "ViewState": "AQIAAFoAAAAAAAAAAAAowGUAAAAzAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-10T01:59:41.694Z",
               "EditorCaption": ""
@@ -37,14 +37,13 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Projects\\Algorithm\\Sort\\Program.cs",
+              "DocumentMoniker": "D:\\Projects\\Algorithm\\C#\\Sort\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "D:\\Projects\\Algorithm\\Sort\\Program.cs",
+              "ToolTip": "D:\\Projects\\Algorithm\\C#\\Sort\\Program.cs",
               "RelativeToolTip": "Program.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-10T01:59:37.239Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-10T01:59:37.239Z"
             }
           ]
         }

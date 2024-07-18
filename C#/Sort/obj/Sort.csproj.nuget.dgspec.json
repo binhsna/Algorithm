@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Projects\\Algorithm\\Sort\\Sort.csproj": {}
+    "D:\\Projects\\Algorithm\\C#\\Sort\\Sort.csproj": {}
   },
   "projects": {
-    "D:\\Projects\\Algorithm\\Sort\\Sort.csproj": {
+    "D:\\Projects\\Algorithm\\C#\\Sort\\Sort.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projects\\Algorithm\\Sort\\Sort.csproj",
+        "projectUniqueName": "D:\\Projects\\Algorithm\\C#\\Sort\\Sort.csproj",
         "projectName": "Sort",
-        "projectPath": "D:\\Projects\\Algorithm\\Sort\\Sort.csproj",
+        "projectPath": "D:\\Projects\\Algorithm\\C#\\Sort\\Sort.csproj",
         "packagesPath": "C:\\Users\\Daica\\.nuget\\packages\\",
-        "outputPath": "D:\\Projects\\Algorithm\\Sort\\obj\\",
+        "outputPath": "D:\\Projects\\Algorithm\\C#\\Sort\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Daica\\AppData\\Roaming\\NuGet\\NuGet.Config",
